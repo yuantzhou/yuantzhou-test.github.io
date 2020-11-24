@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
     listI.addEventListener('click',function(){
              //display for each garlley
       document.querySelector('div.loader').style.display= "block";
-        fetch(`www.randyconnolly.com/funwebdev/3rd/api/art/paintings.php?galley=${li}`
+        fetch(`https://www.randyconnolly.com/funwebdev/3rd/api/art/paintings.php?galley=${li}`
              ).then((res)=> res.json()).then(g => {listGallery(g)}).catch(error => console.error(error));
         function listGallery(g){
         let A= document.querySelector('div.a section');
