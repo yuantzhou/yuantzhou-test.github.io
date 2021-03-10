@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8"/>  
+    <title>COMP 3512 Assign1</title>   
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,800" rel="stylesheet">    
+    <link rel="stylesheet" href="a1.css">
+
+    
+</head>
+<body>
+
+<main class="container">
+    <div class="box e">Yuan Tao Zhou <button id="Credit"> Credit</button> <section>
+                
+      </section>  </div>
+    <div class="box a">
+      <div class="loader"></div>
+        <section>
+          <img id= "logo" alt="picture" height= 40px>
+          <label> </label>
+          <h2 id="symbol"></h2>
+          <label>Name:</label>
+          <span id="name"></span>          
+          <label>Sector:</label>
+          <span id="sector"></span><br>   
+          <label>Address:</label>
+          <span id="address"></span><br>   
+          <label>Subindustry:</label>
+          <span id="subindustry"></span><br>   
+          <label>Description:</label>
+          <span id="description"></span><br>            
+          <label>Exchange:</label> 
+          <span id="exchange"></span><br>            
+          <label>Website:</label>
+          <span><a href="" id="website"></a></span>            
+      </section>  
+  </div>
+  <div class="box b"> 
+      <section>
+        <h2>Companies</h2>
+        <p>Filter:<p>
+        <input type="text" id="companyX" placeholder="Search for Company">
+        <button id="Go">Go</button>
+        <button id="Clear">Clear</button>
+        <ul id="companyList"></ul>        
+      </section>  	
+  </div>
+  <div class="box c">
+    <section>
+        <h2>Stock Data</h2> 
+        <button id="chart">View Chart</button> 
+        <table class="w3-table-all" id="stockList">
+           
+        </table>
+    </section>  
+  </div>
+  <div class="box d"><section></section></div>
+  <div class="box h">
+    <section>
+    <table class="w3-table-all" id="statList">
+           <tr>
+             <th>
+           </th>
+           <th>Open</th>
+           <th>Close</th>
+           <th>Low</th>
+           <th>High</th>
+           <th>Volume</th>
+          </tr>
+          <tr id ="Avg">
+            <td>Avg</td>
+          </tr>
+          <tr id ="Min"> 
+            <td>Min</td>
+            </tr>
+          <tr id ="Max">
+           <td>Max</td>
+          </tr>
+          
+    </table>
+  </section>
+  </div>
+<div class="box f">
+    <section>
+      <canvas id="BarChart" width="100px" height="50px" ></canvas>
+      <canvas id="LineChart" width="100px" height="50px"></canvas>
+      <div id="candle"></div>
+    </section>  </div>
+    <div class="box g">
+      <h2 id="CInfo">Company Info</h2>
+      <p id ="des"></p>
+      <button id="back">Close</button>
+      <button id="speak">Speak</button>
+    </div>
+    <div class="box I">
+      <h2>Financials</h2>
+      <table class="w3-table-all" id="finList">
+        <tr>
+          <th>
+        </th>
+        <th>Revenue</th>
+        <th>Earnings</th>
+        <th>Assets</th>
+        <th>Liabilities</th>
+       </tr>
+       <tr id ="t19">
+         <td>2019</td>
+       </tr>
+       <tr id ="t18"> 
+         <td>2018</td>
+         </tr>
+       <tr id ="t17">
+        <td>2017</td>
+       </tr>
+ </table>
+    </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="a1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<!-- taking online sortable table/-->
+    <script src= "https://www.w3schools.com/lib/w3.js"></script>
+    <!-- taking online for currency/-->
+    <script src="accounting.js/accounting.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSptOgOb1aq9WaB4wmJHHEB5B7117gmwU&callback=initMap" async defer></script>
+</body>
+</html>
