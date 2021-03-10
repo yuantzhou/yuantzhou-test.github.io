@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
                return search.name === `${e.target.innerHTML}`;
            }
             //display B
-            document.querySelector('#logo').setAttribute("src","w2021-assign1/logos/"+G.symbol+".svg");
+            document.querySelector('#logo').setAttribute("src",G.symbol+".svg");
             document.querySelector('#name').innerHTML = `${G.name}<br>`; 
             document.querySelector('#symbol').innerHTML = `${G.symbol}`; 
             document.querySelector('#sector').innerHTML = `${G.sector}`; 
